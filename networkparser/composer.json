@@ -1,0 +1,13 @@
+{
+    "name": "smccabe/networkparser",
+    "type": "project",
+    "require": {
+        "nategood/commando": "^0.3.0"
+    },
+    "authors": [
+        {
+            "name": "Shawn McCabe",
+            "email": "smccabe@acromediainc.com"
+        }
+    ]
+}

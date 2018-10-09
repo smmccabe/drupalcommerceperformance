@@ -1,0 +1,49 @@
+#!/usr/bin/php
+
+<?php
+
+require_once 'vendor/autoload.php';
+
+$cmd = new Commando\Command();
+
+$cmd->option()
+  ->title('input file')
+  ->require()
+  ->describedAs('File to parse');
+
+$cmd->option('o')
+  ->aka('output')
+  ->describedAs('The filename of the output, defaults to output.csv');
+
+/*if(isset($options['h']) || !isset($options['i'])) {
+  print "Pass in a .har file, likely exported from your browsers dev tools and have it parsed into a csv file for simple analysis.\n\n";
+  print "Arguments: networklist.php inputfile [options]\n";
+  print "\t-h This help info\n";
+  print "\t-o Name of the results file, default to output.csv\n";
+
+  exit();
+}*/
+
+$file = file_get_contents($cmd[0]);
+$decode = json_decode($file);
+$entries = $decode->log->entries;
+
+$filename = 'output.csv';
+if(!empty($cmd['output'])) {
+  $filename = $cmd['output'];
+}
+
+$output = fopen($filename, 'w');
+fputcsv($output, ['File', 'Time', 'Size']);
+
+foreach($entries as $entry) {
+  $scrubbed = [
+    'file' => $entry->request->url,
+    'time' => $entry->time,
+    'size' => $entry->response->bodySize,
+  ];
+
+  fputcsv($output, $scrubbed);
+}
+
+fclose($output);
