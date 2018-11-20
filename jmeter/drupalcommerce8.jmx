@@ -10,7 +10,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="url" elementType="Argument">
             <stringProp name="Argument.name">url</stringProp>
-            <stringProp name="Argument.value">basic.performance.acromedia.com</stringProp>
+            <stringProp name="Argument.value">enterprise.performance.acromedia.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -37,7 +37,7 @@
           </elementProp>
           <stringProp name="HTTPSampler.domain">${url}</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path"></stringProp>
           <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
@@ -61,7 +61,7 @@
         <hashTree/>
         <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
           <stringProp name="ConstantTimer.delay">2000</stringProp>
-          <stringProp name="RandomTimer.range">8000.0</stringProp>
+          <stringProp name="RandomTimer.range">6000.0</stringProp>
         </GaussianRandomTimer>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Homepage" enabled="true">
@@ -78,7 +78,6 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.image_parser">true</boolProp>
           <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
           <stringProp name="HTTPSampler.concurrentPool">10</stringProp>
           <stringProp name="HTTPSampler.embedded_url_re">acromedia.com</stringProp>
@@ -109,7 +108,6 @@
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <boolProp name="HTTPSampler.image_parser">true</boolProp>
               <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
               <stringProp name="HTTPSampler.concurrentPool">10</stringProp>
               <stringProp name="HTTPSampler.embedded_url_re">${url}</stringProp>
@@ -131,7 +129,6 @@
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <boolProp name="HTTPSampler.image_parser">true</boolProp>
               <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
               <stringProp name="HTTPSampler.concurrentPool">10</stringProp>
               <stringProp name="HTTPSampler.embedded_url_re">${url}</stringProp>
@@ -153,7 +150,6 @@
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <boolProp name="HTTPSampler.image_parser">true</boolProp>
               <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
               <stringProp name="HTTPSampler.concurrentPool">10</stringProp>
               <stringProp name="HTTPSampler.embedded_url_re">${url}</stringProp>
@@ -175,7 +171,6 @@
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <boolProp name="HTTPSampler.image_parser">true</boolProp>
               <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
               <stringProp name="HTTPSampler.concurrentPool">10</stringProp>
               <stringProp name="HTTPSampler.embedded_url_re">${url}</stringProp>
@@ -197,7 +192,6 @@
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <boolProp name="HTTPSampler.image_parser">true</boolProp>
               <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
               <stringProp name="HTTPSampler.concurrentPool">10</stringProp>
               <stringProp name="HTTPSampler.embedded_url_re">${url}</stringProp>
@@ -219,7 +213,6 @@
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <boolProp name="HTTPSampler.image_parser">true</boolProp>
               <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
               <stringProp name="HTTPSampler.concurrentPool">10</stringProp>
               <stringProp name="HTTPSampler.embedded_url_re">${url}</stringProp>
@@ -243,7 +236,6 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.image_parser">true</boolProp>
           <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
           <stringProp name="HTTPSampler.concurrentPool">10</stringProp>
           <stringProp name="HTTPSampler.embedded_url_re">acromedia.com</stringProp>
@@ -315,7 +307,6 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.image_parser">true</boolProp>
           <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
           <stringProp name="HTTPSampler.concurrentPool">10</stringProp>
           <stringProp name="HTTPSampler.embedded_url_re">${url}</stringProp>
@@ -337,7 +328,6 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.image_parser">true</boolProp>
           <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
           <stringProp name="HTTPSampler.concurrentPool">10</stringProp>
           <stringProp name="HTTPSampler.embedded_url_re">${url}</stringProp>
@@ -409,7 +399,7 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
           <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
           <stringProp name="HTTPSampler.concurrentPool">10</stringProp>
           <stringProp name="HTTPSampler.embedded_url_re">${url}</stringProp>
@@ -439,11 +429,11 @@
             <stringProp name="Sample.scope">all</stringProp>
           </HtmlExtractor>
           <hashTree/>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Location" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">location</stringProp>
-            <stringProp name="RegexExtractor.regex">Location: (.*)</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Order ID" enabled="true">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">order_id</stringProp>
+            <stringProp name="RegexExtractor.regex">(.*)/checkout/(\d+)</stringProp>
+            <stringProp name="RegexExtractor.template">$2$</stringProp>
             <stringProp name="RegexExtractor.default">ERROR</stringProp>
             <stringProp name="RegexExtractor.match_number"></stringProp>
             <stringProp name="Sample.scope">all</stringProp>
@@ -474,13 +464,34 @@
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">op</stringProp>
               </elementProp>
+              <elementProp name="login[returning_customer][name]" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">login[returning_customer][name]</stringProp>
+              </elementProp>
+              <elementProp name="login[returning_customer][password]" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">login[returning_customer][password]</stringProp>
+              </elementProp>
+              <elementProp name="order_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${order_id}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">order_id</stringProp>
+              </elementProp>
             </collectionProp>
           </elementProp>
           <stringProp name="HTTPSampler.domain"></stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${location}</stringProp>
+          <stringProp name="HTTPSampler.path">/checkout/${order_id}/login</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -490,74 +501,8 @@
           <stringProp name="HTTPSampler.connect_timeout"></stringProp>
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </HTTPSamplerProxy>
-        <hashTree>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Location" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">location</stringProp>
-            <stringProp name="RegexExtractor.regex">Location: (.*)</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">ERROR</stringProp>
-            <stringProp name="RegexExtractor.match_number"></stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-        </hashTree>
+        <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout Order Information" enabled="true">
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain"></stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${location}</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.image_parser">true</boolProp>
-          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
-          <stringProp name="HTTPSampler.concurrentPool">10</stringProp>
-          <stringProp name="HTTPSampler.embedded_url_re">${url}</stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="Form ID Extractor" enabled="false">
-            <stringProp name="HtmlExtractor.refname">form_id</stringProp>
-            <stringProp name="HtmlExtractor.expr">.commerce-checkout-flow input[name=form_id]</stringProp>
-            <stringProp name="HtmlExtractor.attribute">value</stringProp>
-            <stringProp name="HtmlExtractor.default">ERROR</stringProp>
-            <boolProp name="HtmlExtractor.default_empty_value">false</boolProp>
-            <stringProp name="HtmlExtractor.match_number"></stringProp>
-            <stringProp name="HtmlExtractor.extractor_impl">JSOUP</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </HtmlExtractor>
-          <hashTree/>
-          <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="Form Build ID Extractor" enabled="false">
-            <stringProp name="HtmlExtractor.refname">form_build_id</stringProp>
-            <stringProp name="HtmlExtractor.expr">.commerce-checkout-flow input[name=form_build_id]</stringProp>
-            <stringProp name="HtmlExtractor.attribute">value</stringProp>
-            <stringProp name="HtmlExtractor.default">ERROR</stringProp>
-            <boolProp name="HtmlExtractor.default_empty_value">false</boolProp>
-            <stringProp name="HtmlExtractor.match_number"></stringProp>
-            <stringProp name="HtmlExtractor.extractor_impl">JSOUP</stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </HtmlExtractor>
-          <hashTree/>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Location" enabled="false">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">location</stringProp>
-            <stringProp name="RegexExtractor.regex">Location: (.*)</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">ERROR</stringProp>
-            <stringProp name="RegexExtractor.match_number"></stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout Review" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="contact_information[email]" elementType="HTTPArgument">
@@ -727,13 +672,12 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${location}</stringProp>
+          <stringProp name="HTTPSampler.path">/checkout/${order_id}/order_information</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.image_parser">true</boolProp>
           <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
           <stringProp name="HTTPSampler.concurrentPool">10</stringProp>
           <stringProp name="HTTPSampler.embedded_url_re">${url}</stringProp>
@@ -763,18 +707,8 @@
             <stringProp name="Sample.scope">all</stringProp>
           </HtmlExtractor>
           <hashTree/>
-          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Location" enabled="true">
-            <stringProp name="RegexExtractor.useHeaders">true</stringProp>
-            <stringProp name="RegexExtractor.refname">location</stringProp>
-            <stringProp name="RegexExtractor.regex">Location: (.*)</stringProp>
-            <stringProp name="RegexExtractor.template">$1$</stringProp>
-            <stringProp name="RegexExtractor.default">ERROR</stringProp>
-            <stringProp name="RegexExtractor.match_number"></stringProp>
-            <stringProp name="Sample.scope">all</stringProp>
-          </RegexExtractor>
-          <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout Completion" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Checkout Review" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="form_build_id" elementType="HTTPArgument">
@@ -804,13 +738,12 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">${location}</stringProp>
+          <stringProp name="HTTPSampler.path">/checkout/${order_id}/complete</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-          <boolProp name="HTTPSampler.image_parser">true</boolProp>
           <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
           <stringProp name="HTTPSampler.concurrentPool">10</stringProp>
           <stringProp name="HTTPSampler.embedded_url_re">${url}</stringProp>
